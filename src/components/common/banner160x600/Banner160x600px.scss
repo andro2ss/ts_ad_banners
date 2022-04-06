@@ -1,0 +1,38 @@
+.banner2 {
+  &__container {
+    width: 160px;
+    height: 600px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+
+    img {
+      width: 80%;
+      margin-bottom: 8px;
+    }
+  }
+    &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    width: 144px;
+    height: 100px;
+
+    p{
+      margin: 0;
+      font-weight: 700;
+    }
+
+    img{
+      height: auto;
+      width: 100%;
+      margin: 0;
+    }
+
+  }
+}

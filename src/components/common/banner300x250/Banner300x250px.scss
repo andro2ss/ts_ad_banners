@@ -1,0 +1,61 @@
+.banner1 {
+  &__container {
+    width: 300px;
+    height: 250px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+
+    img {
+      width: 80%;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2px;
+    column-gap: 2px;
+    justify-content: center;
+    padding: 3px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    width: 144px;
+    height: 100px;
+    padding: 2px;
+
+    p{
+      margin: 0;
+      font-weight: 700;
+    }
+
+    img{
+      height: 76px;
+      width: auto;
+      margin: 0;
+    }
+
+  }
+}
+
+.jumpingFrame{
+  animation: frame;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes frame {
+  0% {border-color: grey}
+  50% {border-color: red}
+  100% {border-color: grey}
+}

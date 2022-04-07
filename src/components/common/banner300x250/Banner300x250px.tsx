@@ -46,6 +46,7 @@ function Banner300X250Px() {
   return (
     <div className="banner1__container">
       {AdBox(adData, showAd)}
+      <span className="banner2__symbol"> {"="}</span>
       <img
         src="http://rekrutacjartb.pl/developer/images/logo_rtb.png"
         alt="logo"

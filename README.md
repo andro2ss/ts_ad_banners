@@ -4,7 +4,6 @@
 * [General info](#general-info)
 * [Technologies](#Technologies)
 * [Setup](#Setup)
-* [App website](#App-website)
 
 ## General info
 
@@ -29,7 +28,3 @@ Two simple banners and a timer, written in TypeScript + React
 ### Compiles and minifies for production
 
 #### `npm run build`
-
-## App website
-
-### [TS Ad Banners](https://ts-ad-banners-ab.web.app/)

@@ -49,20 +49,49 @@ function Banner160X600Px() {
 
   return (
     <div className="banner2__container">
-      <button>X</button>
+      <button
+        className="banner2__btn--closing"
+        onClick={(e) => {
+          e.currentTarget.parentElement?.classList.add("hide");
+        }}
+      >
+        X
+      </button>
+      <button
+        className="banner2__btn--right banner2__btn"
+        onClick={() => {
+          if (activeAd === 2) {
+            setActiveAd(0);
+          } else setActiveAd((activeFrame) => activeFrame + 1);
+        }}
+      >
+        <span> {">"} </span>
+      </button>
+      <button
+        className="banner2__btn--left banner2__btn"
+        onClick={() => {
+          if (activeAd === 0) {
+            setActiveAd(2);
+          } else setActiveAd((activeFrame) => activeFrame - 1);
+        }}
+      >
+        <span> {"<"} </span>
+      </button>
       {showAd.length > 0 ? (
         <div className="banner2__box">
           <img src={"http:" + showAd[activeAd].imgURL} alt="IMG" />
-          <p>{showAd[activeAd].name}</p>
-          <p>
+          <p className="box__name">{showAd[activeAd].name}</p>
+          <p className="box__price">
             {showAd[activeAd].price} {showAd[activeAd].currency}
           </p>
-          <button>Check</button>
+          <button className="banner2__btn--checking">Check</button>
         </div>
       ) : (
         ""
       )}
+      <span className="banner2__symbol"> {"="}</span>
       <img
+        className="banner2__logo"
         src="http://rekrutacjartb.pl/developer/images/logo_rtb.png"
         alt="logo"
       />

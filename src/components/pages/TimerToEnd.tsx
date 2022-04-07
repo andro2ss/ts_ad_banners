@@ -1,14 +1,16 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
+import TimerToEnd from "../common/timerToEnd/TimerToEnd";
 
-function TimerToEnd() {
-    return (
-        <div>3
-            <Link to="/" className="linkToTask__link--home">
-                Cofnij
-            </Link>
-        </div>
-    );
+function TimerToEndPage() {
+  return (
+    <div>
+      <TimerToEnd />
+      <Link to="/" className="linkToTask__link--home">
+        Cofnij
+      </Link>
+    </div>
+  );
 }
 
-export default TimerToEnd;
+export default TimerToEndPage;
